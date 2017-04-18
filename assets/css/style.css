@@ -42,26 +42,64 @@ background-color: #f7f7f7;
 
 .bar {
 	height: 60px; width: 100%;  
-	background-color: #fff; opacity: .5;
+	background-color: #fff; 
+}
+
+  .navbar-toggle .icon-bar {
+  width: 20px;
+  height: 2px;
+  border-radius: 0px;
+
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #000;
+}
+.navbar-inverse .navbar-toggle:hover > .icon-bar,
+.navbar-inverse .navbar-toggle:focus > .icon-bar {
+background-color: #fff;
 }
 
 
+
+.navbar-inverse .navbar-toggle {
+  border: none; margin-top: 13px;
+}
+
+
+.navbar-inverse {
+	background-color: hsla(0, 100%, 100%, .5);
+ 	border: none;
+}
+.navbar-inverse .navbar-brand {
+  color: #000;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #fff;
+  background-color: #c24735;
+  height: 100%;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #000;
+}
 
 
 nav {
-	height: 60px; width: 100%;
+	height: 60px;
 }
 
+/*-----*/
 
-nav ul {
-	height: 70px; 
-}
+
 
 nav li {
-padding: 0 30px; height: 60px;
+padding: 0 30px;
+height: 60px;
 font-family: 'Maven Pro', sans-serif; 
 font-size: 20px; font-weight: lighter;
-text-align: center; line-height: 40px;
+text-align: center;
 
 }
 
@@ -69,11 +107,26 @@ nav li a {
 color: #000;
 }
 
-.nav > li > a:hover,
-.nav > li > a:focus {
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: #000; height: 100%;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #000; height: 100%;
+}
+
+/*-
+.navbar-inverse > li > a:hover,
+.navbar-inverse > li > a:focus {
   highlight-color: #000;
   color: #fff; height: 100%;
 }
+-*/
 
 .nav-pills > li > a {
   border-radius: 0px; 
